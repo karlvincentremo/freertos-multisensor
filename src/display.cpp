@@ -103,8 +103,8 @@ static constexpr uint32_t kEventPollMs = 250;
 
 void DisplayTask(void *pvParameters) {
     DisplayMode mode = kInitialDisplayMode;
-    SensorData sample = {0.0f, 0.0f, 0, false};
-    bool have_sample = false;
+    SensorData sample = {25.0f, 50.0f, 50, false};
+    bool have_sample = true;
     bool active = true;      /* the system boots ACTIVE */
     bool motion = false;
     bool alarm = false;
